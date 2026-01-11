@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body className={`${cairo.variable} antialiased font-cairo`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="container py-10">{children}</main>
       </body>
     </html>
   );

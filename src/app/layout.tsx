@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/shared/Navbar";
 
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,11 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar">
-      <body
-        className={`${cairo.variable}  antialiased`}
-      >
-        {children}
+    <html lang="ar" dir="rtl">
+      <body className={`${cairo.variable} antialiased font-cairo`}>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );

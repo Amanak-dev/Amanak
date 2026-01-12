@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${cairo.variable}  antialiased`} dir="rtl"
       >
-        <main className="container py-10">{children}</main>
+        <main className="py-10">{children}</main>
 
       </body>
     </html>

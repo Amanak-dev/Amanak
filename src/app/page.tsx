@@ -1,3 +1,4 @@
+import CTA from "@/components/shared/Home/CTA";
 import Hero from "@/components/shared/Home/Hero";
 import Services from "@/components/shared/Home/Services";
 import Status from "@/components/shared/Home/Status";
@@ -13,6 +14,7 @@ export default function Home() {
         <Status />
         <Services />
         <Testimonials />
+        <CTA />
       </main>
     </>
   );

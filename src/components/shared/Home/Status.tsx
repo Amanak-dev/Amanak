@@ -3,19 +3,20 @@ import { CircleCheck, FileCheck, Users } from "lucide-react";
 
 const stats = [
   {
-    icon: FileCheck,
-    value: "98%",
-    label: "بلاغ تم حله",
+    icon: CircleCheck,
+    value: "500+",
+    label: "حالة عثور ناجحة",
   },
+
   {
     icon: Users,
     value: "10,000+",
     label: "متطوع نشط",
   },
   {
-    icon: CircleCheck,
-    value: "500+",
-    label: "حالة عثور ناجحة",
+    icon: FileCheck,
+    value: "98%",
+    label: "بلاغ تم حله",
   },
 ];
 

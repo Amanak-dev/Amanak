@@ -8,7 +8,7 @@ export interface StatItem {
     count: string;
     label: string;
     bg: string;
-    text: string;
+    textColor: string;
     border: string
 }
 
@@ -19,7 +19,7 @@ export const STATS: StatItem[] = [
         count: "+500",
         label: "حالة تم العثور عليها",
         bg: "bg-green-100",
-        text: "text-green-600",
+        textColor: "text-green-600",
         border: "border-green-600",
     },
     {
@@ -28,7 +28,7 @@ export const STATS: StatItem[] = [
         count: "+10k",
         label: "عضو في المجتمع",
         bg: "bg-blue-100",
-        text: "text-blue-600",
+        textColor: "text-blue-600",
         border: "border-blue-600",
     },
     {
@@ -37,7 +37,7 @@ export const STATS: StatItem[] = [
         count: "120",
         label: "بلاغ نشط حالياً",
         bg: "bg-red-100",
-        text: "text-red-600",
+        textColor: "text-red-600",
         border: "border-red-600",
     },
     {
@@ -46,7 +46,7 @@ export const STATS: StatItem[] = [
         count: "25",
         label: "مدينة مغطاة",
         bg: "bg-purple-100",
-        text: "text-purple-600",
+        textColor: "text-purple-600",
         border: "border-purple-600",
     },
 ];

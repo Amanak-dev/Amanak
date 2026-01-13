@@ -1,6 +1,7 @@
-import { BellRing, CheckCircle, Map, Users } from "lucide-react";
+import { BellRing, CheckCircle, Map, Users, Shield, Zap, Lock } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
+// StatsSection
 export interface StatItem {
     id: number;
     icon: LucideIcon;
@@ -8,7 +9,7 @@ export interface StatItem {
     label: string;
     bg: string;
     text: string;
-    border:string
+    border: string
 }
 
 export const STATS: StatItem[] = [
@@ -49,3 +50,44 @@ export const STATS: StatItem[] = [
         border: "border-purple-600",
     },
 ];
+
+// valuesSection
+
+export type ValueItem = {
+  id:number
+  icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+export const VALUES:ValueItem[] = [
+    {
+        id:1,
+        icon: Shield,
+        title: "الأمان أولاً",
+        description:
+            "نتحقق من جميع البلاغات لضمان بيئة آمنة وخالية من الاحتيال.",
+    },
+    {
+        id:2,
+        icon: Users,
+        title: "المسؤولية المجتمعية",
+        description:
+            "نحن جزء من هذا المجتمع، ونجاح المنصة يعتمد على تكافل الجميع.",
+    },
+    {
+        id:3,
+        icon: Zap,
+        title: "السرعة والكفاءة",
+        description:
+            "نطور أدواتنا باستمرار لضمان وصول المعلومة لمن يحتاجها في ثوانٍ.",
+    },
+    {
+        id:4,
+        icon: Lock,
+        title: "الخصوصية",
+        description:
+            "نحترم خصوصية المبلغين والمفقودين ونلتزم بأعلى معايير حماية البيانات.",
+    },
+];
+

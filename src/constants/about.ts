@@ -1,4 +1,4 @@
-import { BellRing, CheckCircle, Map, Users, Shield, Zap, Lock } from "lucide-react";
+import { BellRing, CheckCircle, Map, Users, Shield, Zap, Lock, Eye, Rocket } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 
@@ -52,6 +52,46 @@ export const STATS: StatItem[] = [
     },
 ];
 
+// Mission Section
+export type MissionCard = {
+    id: string;
+    icon: LucideIcon;
+    title: string;
+    content: string;
+};
+
+export type MissionContent = {
+    cards: MissionCard[];
+    valuesTitle: string;
+    values: string[];
+};
+
+export const MISSION_DATA: MissionContent = {
+    cards: [
+        {
+            id: "vision",
+            icon: Eye,
+            title: "رؤيتنا",
+            content:
+                "أن نصبح المرجع الأول والأكثر موثوقية في المنطقة للمساعدة في حالات الفقدان، وخلق مجتمع واعٍ ومترابط يساهم بفاعلية في حماية أفراده وممتلكاتهم."
+        },
+        {
+            id: "mission",
+            icon: Rocket,
+            title: "رسالتنا",
+            content:
+                "توظيف أحدث التقنيات لربط المفقودات بأصحابها بأسرع وقت، وتوفير أدوات سهلة وفعالة للإبلاغ والبحث، مع الحفاظ على خصوصية وأمن بيانات المستخدمين."
+        }
+    ],
+    valuesTitle: "قيمنا الأساسية",
+    values: [
+        "الشفافية والمصداقية في كل بلاغ",
+        "سرعة الاستجابة والتحرك الفوري",
+        "الخصوصية وأمان المعلومات"
+    ]
+};
+
+
 // values Section
 
 export type ValueItem = {
@@ -94,7 +134,7 @@ export const VALUES: ValueItem[] = [
 
 // Members Section
 export type TeamMember = {
-    id:number,
+    id: number,
     name: string;
     role: string;
     stack: "Frontend" | "Backend";
@@ -104,7 +144,7 @@ export type TeamMember = {
 
 export const TEAM: TeamMember[] = [
     {
-        id:1,
+        id: 1,
         name: "مازن محمد",
         role: "Frontend Developer",
         stack: "Frontend",
@@ -112,7 +152,7 @@ export const TEAM: TeamMember[] = [
         bio: "يقود تطوير واجهات المستخدم مع تركيز على التجربة، الأداء، وتحويل الأفكار المعقدة إلى حلول بسيطة."
     },
     {
-        id:2,
+        id: 2,
         name: "سامح يسرى",
         role: "Backend Developer",
         stack: "Backend",
@@ -120,7 +160,7 @@ export const TEAM: TeamMember[] = [
         bio: "مسؤول عن بناء الأنظمة الخلفية القوية وضمان استقرار الأداء ومعالجة البيانات بكفاءة."
     },
     {
-        id:3,
+        id: 3,
         name: "محمد فكري",
         role: "Backend Developer",
         stack: "Backend",
@@ -128,7 +168,7 @@ export const TEAM: TeamMember[] = [
         bio: "يعمل على تصميم وتطوير الـ APIs وربط الأنظمة المختلفة مع التركيز على الأمان وقابلية التوسع."
     },
     {
-        id:4,
+        id: 4,
         name: "مارينا طارق",
         role: "Frontend Developer",
         stack: "Frontend",
@@ -136,7 +176,7 @@ export const TEAM: TeamMember[] = [
         bio: "متخصصة في بناء واجهات عصرية ومتجاوبة، مع تركيز قوي على التفاصيل البصرية وسلاسة التفاعل."
     },
     {
-        id:5,
+        id: 5,
         name: "ابانوب عبدالمسيح",
         role: "Frontend Developer",
         stack: "Frontend",

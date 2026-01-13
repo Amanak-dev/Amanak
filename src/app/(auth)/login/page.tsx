@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 
 export default function LoginPage() {
   return (
@@ -24,12 +25,12 @@ export default function LoginPage() {
             </h2>
 
             <div className="mb-5">
-              <label htmlFor="email"> البريد الالكتروني</label>
+              <Label htmlFor="email" className="mb-2"> البريد الالكتروني</Label>
               <Input id="email" type="email" placeholder="you@example.com" />
             </div>
 
             <div className="mb-5">
-              <label htmlFor="password">كلمة المرور</label>
+              <Label htmlFor="password" className="mb-2">كلمة المرور</Label>
               <Input id="password" type="password" placeholder="****" />
             </div>
 

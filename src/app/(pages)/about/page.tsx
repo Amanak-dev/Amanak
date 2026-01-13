@@ -1,14 +1,16 @@
 import Hero from "@/components/shared/about/Hero";
-import Stats from "@/components/shared/about/Stats";
+import StatsSection from "@/components/shared/about/Stats";
 import ValuesSection from "@/components/shared/about/Values";
+import CTA from "@/components/shared/about/CTA";
 
 export default function AboutPage() {
     return (
         <>
         <Hero/>
         <main>
-            <Stats/>
+            <StatsSection/>
             <ValuesSection/>
+            <CTA/>
         </main>
 
         </>

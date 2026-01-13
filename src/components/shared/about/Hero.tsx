@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <header className='w-full relative py-12 lg:py-20 '>
+        <header className='w-full relative py-12 lg:py-20'>
             <div className="container px-4">
                             <div className="flex flex-col-reverse lg:flex-row gap-10 items-center ">
                 {/* Hero Content */}

@@ -54,7 +54,7 @@ export default function LoginPage() {
             <div className="text-center text-sm text-text-secondary">
               ليس لديك حساب؟
               <Link
-                href="/sign-up"
+                href="/register"
                 className="text-primary font-medium hover:text-primary-light text-lg "
               >
                 سجّل الآن

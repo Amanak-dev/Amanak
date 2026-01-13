@@ -67,7 +67,7 @@ export default function RegisterPage() {
             <div className="text-center text-sm text-text-secondary">
               هل لديك حساب بالفعل؟
               <Link
-                href="/sign-in"
+                href="/login"
                 className="text-primary font-medium hover:text-secondary-light text-lg"
               >
                 تسجيل الدخول

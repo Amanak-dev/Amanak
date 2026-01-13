@@ -23,12 +23,12 @@ export default function TeamSection() {
                                 />
                             </div>
                             {/* Member Name */}
-                            <h4 className="text-lg font-bold ">
+                            <h4 className="text-lg font-black ">
                                 {name}
                             </h4>
                             
                             {/* Member Role */}
-                            <p className="text-primary text-sm font-medium mb-1">
+                            <p className="text-primary text-sm font-bold mb-1">
                                 {role}
                             </p>
 

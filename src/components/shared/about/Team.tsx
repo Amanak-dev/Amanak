@@ -13,12 +13,12 @@ export default function TeamSection() {
                     {TEAM.map(({ id, name, role, bio, image, stack }: TeamMember) => (
                         <div key={id} className="flex flex-col items-center ">
                             {/* Member Image */}
-                            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-2 shadow-md">
+                            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-2 shadow-md cursor-pointer group">
                                 <Image
                                     src={image}
                                     alt={name}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover transition-all duration-300 group-hover:scale-105"
                                     sizes="128px"
                                 />
                             </div>
@@ -36,7 +36,7 @@ export default function TeamSection() {
                             <span className="text-xs text-gray-400 mb-2">
                                 {stack}
                             </span>
-                            
+
                             {/* Member Bio */}
                             <p className=" text-sm max-w-[200px]">
                                 {bio}

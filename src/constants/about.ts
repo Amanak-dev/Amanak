@@ -1,4 +1,4 @@
-import { BellRing, CheckCircle, Map, Users, Shield, Zap, Lock, Eye, Rocket } from "lucide-react";
+import { BellRing, CheckCircle, Map, Users, Shield, Zap, Lock, Eye, Rocket,Lightbulb,Globe, Smile } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 
@@ -131,6 +131,52 @@ export const VALUES: ValueItem[] = [
             "نحترم خصوصية المبلغين والمفقودين ونلتزم بأعلى معايير حماية البيانات.",
     },
 ];
+
+
+// TimeLine Section
+export type TimelineStep = {
+    id: number;
+    year: string;
+    title: string;
+    description: string;
+    icon: LucideIcon;
+};
+
+export const TIMELINE_STEPS: TimelineStep[] = [
+    {
+        id: 1,
+        year: "2025",
+        title: "بداية الفكرة",
+        description:
+            "انطلقت الفكرة عندما لاحظ المؤسسون صعوبة العثور على طفل مفقود في الحي، مما ألهمهم لإنشاء حل رقمي يجمع الجيران.",
+        icon: Lightbulb
+    },
+    {
+        id: 2,
+        year: "2026",
+        title: "إطلاق المنصة التجريبي",
+        description:
+            "تم إطلاق النسخة الأولى في مدينة واحدة، وسرعان ما انضم أكثر من 400 عضو في الشهر الأول.",
+        icon: Rocket
+    },
+    {
+        id: 3,
+        year: "2026",
+        title: "أول قصة نجاح كبرى",
+        description:
+            "احتفلنا بعودة طفل لعائلته خلال 3 ساعات فقط من نشر البلاغ بفضل تفاعل المجتمع.",
+        icon: Smile
+    },
+    {
+        id: 4,
+        year: "2026 - اليوم",
+        title: "التوسع والنمو",
+        description:
+            "توسعت الشبكة لتغطي معظم المدن الكبرى، مع إضافة ميزات الذكاء الاصطناعي للتعرف على الصور.",
+        icon: Globe
+    }
+];
+
 
 // Members Section
 export type TeamMember = {

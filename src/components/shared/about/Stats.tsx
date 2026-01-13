@@ -5,7 +5,8 @@ import { STATS, StatItem } from "@/constants/about";
 
 export default function StatsSection() {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-12 bg-white text-center">
+            
             <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {STATS.map(({ id, icon: Icon, count, label, bg, textColor, border }: StatItem) => (
                     <Card key={id} className={cn(

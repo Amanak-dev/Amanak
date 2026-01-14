@@ -23,7 +23,7 @@ export default function Footer() {
                         <h3 className="font-bold text-gray-900 mb-6 text-lg">روابط سريعة</h3>
                         <ul className="flex flex-col gap-4 text-gray-500">
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">
+                                <Link href="/about" className="hover:text-primary transition-colors">
                                     عن أمانك
                                 </Link>
                             </li>

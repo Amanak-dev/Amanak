@@ -21,7 +21,7 @@ export default function FAQ() {
                     defaultValue="item-1"
                 >
                     {FAQS.map(({ id, value, icon: Icon, question, answer }: FAQ_DATA) => (
-                        <AccordionItem value={value} className="bg-white p-4 rounded-2xl">
+                        <AccordionItem value={value} className="bg-white p-4 rounded-2xl" key={id}>
                             <AccordionTrigger className="w-full">
                                 <div className="flex items-center gap-3 font-bold cursor-pointer">
                                     <Icon className="size-5 text-primary" />

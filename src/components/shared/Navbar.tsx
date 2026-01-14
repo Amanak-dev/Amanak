@@ -16,6 +16,7 @@ export interface NavigationItem {
 export const navigationConfig: NavigationItem[] = [
   { id: "home", label: "الرئيسية", href: "/" },
   { id: "Features", label: "المميزات", href: "/services" },
+  { id: "About", label: "مـن نحـن", href: "/about" },
   { id: "Success_stories", label: "قصص النجاح", href: "/equipments" },
   { id: "contact-us", label: "تواصل معنا", href: "/contact-us" },
 ];

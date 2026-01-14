@@ -5,7 +5,7 @@ export default function FeatureCategories() {
     return (
         <section className="py-12">
             <div className="container">
-                <h2 className="text-2xl md:text-5xl font-bold leading-tight mb-4">تصفح حسب الموضوع</h2>
+                <h2 className="text-2xl md:text-5xl font-bold leading-tight mb-4">تصفح حسب <span className="text-primary">الموضوع</span></h2>
                 <p className="text-xl  opacity-70">اختر القسم الذي يتعلق باستفسارك للوصول السريع للإجابات</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
                     {categories.map(({ id, icon: Icon, title, description }: FeatureCategory) => (

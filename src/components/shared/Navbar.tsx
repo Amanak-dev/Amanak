@@ -17,6 +17,7 @@ export const navigationConfig: NavigationItem[] = [
   { id: "home", label: "الرئيسية", href: "/" },
   { id: "Features", label: "المميزات", href: "/services" },
   { id: "About", label: "مـن نحـن", href: "/about" },
+  { id: "Help", label:"دعم مباشر", href: "/help" },
   { id: "Success_stories", label: "قصص النجاح", href: "/equipments" },
   { id: "contact-us", label: "تواصل معنا", href: "/contact-us" },
 ];
@@ -90,7 +91,7 @@ function MobileNavbar({ pathname }: { pathname: string }) {
 function NavLinks({ pathname }: { pathname: string }) {
   return (
     <div>
-      <ul className="flex flex-col gap-6 lg:flex-row w-full px-3">
+      <ul className="flex flex-col gap-1 lg:flex-row w-full px-3">
         {navigationConfig.map((item) => (
           <NavLinkItem
             key={item.id}
@@ -123,7 +124,7 @@ function NavLinkItem({ item, isActive }: NavLinkItemProps) {
         asChild
         className={cn(
           "font-semibold",
-          isActive && "border-b-2 border-border rounded-b-none font-bold"
+          isActive && "border-b-2 border-border rounded-b-none font-bold text-primary"
         )}
       >
         <Link href={item.href}>{item.label}</Link>

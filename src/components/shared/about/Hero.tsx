@@ -18,8 +18,8 @@ export default function Hero() {
                     </div>
                     {/* Buttons */}
                     <div className="flex gap-4 ">
-                        <Button size={"lg"} className="text-lg">انضم لمجتمعنا</Button>
-                        <Button size={"lg"} className=" text-lg transition-all " variant={'outline'}>تعرف على الفريق</Button>
+                        <Button size={"xl"} >انضم لمجتمعنا</Button>
+                        <Button size={"xl"} className=" transition-all " variant={'outline'}>تعرف على الفريق</Button>
                     </div>
 
                 </div>

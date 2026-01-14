@@ -13,10 +13,10 @@ export default function CTA() {
                 
                 {/* CTA Buttons */}
                 <div className="flex gap-3 mt-5">
-                    <Button asChild size={"lg"} className="text-lg">
+                    <Button asChild size={"xl"} >
                         <Link href={'/register'}>سجـل الآن</Link>
                     </Button>
-                    <Button asChild size={"lg"} variant={"outline"}>
+                    <Button asChild size={"xl"} variant={"outline"}>
                         <Link href={'/'} className="text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30">بلغ عن مفقود</Link>
                     </Button>
 

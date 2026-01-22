@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import { Navbar } from "@/components/shared/Navbar";
 import ScrollToTopButton from "@/components/shared/ScrollToTopButton";
+import { ThemeProvider } from "@/providers/theme-provider"
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -51,10 +52,17 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body className={`${cairo.variable} antialiased font-cairo`}>
-        <Navbar />
-        {children}
-        <Footer />
-        <ScrollToTopButton />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <Footer />
+          <ScrollToTopButton />
+        </ThemeProvider>
 
       </body>
     </html>

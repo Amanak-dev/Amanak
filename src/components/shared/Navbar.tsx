@@ -7,6 +7,7 @@ import { Menu as MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../ui/mode-toggle";
 
 export interface NavigationItem {
   id: string;
@@ -54,6 +55,7 @@ function DesktopNavbar({ pathname }: { pathname: string }) {
           {/* <Image src={"/logo.jpeg"} alt="website logo" width={30} height={30} /> */}
         </Link>
       </Button>
+      <ModeToggle/>
 
       {/* Links */}
       <NavLinks pathname={pathname} />

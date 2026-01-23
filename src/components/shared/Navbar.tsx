@@ -7,6 +7,7 @@ import { Menu as MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../ui/mode-toggle";
 
 export interface NavigationItem {
   id: string;
@@ -15,7 +16,7 @@ export interface NavigationItem {
 }
 export const navigationConfig: NavigationItem[] = [
   { id: "home", label: "الرئيسية", href: "/" },
-  { id: "Features", label: "المميزات", href: "/services" },
+  { id: "Features", label: "المميزات", href: "/momizat" },
   { id: "About", label: "مـن نحـن", href: "/about" },
   { id: "Help", label:"دعم مباشر", href: "/help" },
   { id: "Success_stories", label: "قصص النجاح", href: "/equipments" },
@@ -48,12 +49,15 @@ function DesktopNavbar({ pathname }: { pathname: string }) {
   return (
     <nav className="hidden container items-center justify-between lg:flex">
       {/* Logo */}
-      <Button asChild className="font-bold" variant={"ghost"}>
+      <div className="flex">
+        <Button asChild className="font-bold" variant={"ghost"}>
         <Link href={"/"}>
           امانك
           {/* <Image src={"/logo.jpeg"} alt="website logo" width={30} height={30} /> */}
         </Link>
       </Button>
+      <ModeToggle/>
+      </div>
 
       {/* Links */}
       <NavLinks pathname={pathname} />
@@ -68,18 +72,22 @@ function DesktopNavbar({ pathname }: { pathname: string }) {
 function MobileNavbar({ pathname }: { pathname: string }) {
   return (
     <nav className="flex container items-center justify-between lg:hidden ">
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline" size="icon">
-            <MenuIcon className="size-4" />
-          </Button>
-        </SheetTrigger>
+      <div className="flex items-center gap-2">
+        <ModeToggle />
 
-        <SheetContent side="top" className="p-5">
-          {/* NavLinks */}
-          <NavLinks pathname={pathname} />
-        </SheetContent>
-      </Sheet>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="outline" size="icon">
+              <MenuIcon className="size-4" />
+            </Button>
+          </SheetTrigger>
+
+          <SheetContent side="top" className="p-5">
+            <NavLinks pathname={pathname} />
+          </SheetContent>
+        </Sheet>
+      </div>
+    
     </nav>
   );
 }
